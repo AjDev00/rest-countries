@@ -11,7 +11,7 @@ export default function FifthData() {
   return (
     <div>
       <div>
-        <div className="px-4 pt-10 w-80 ml-1 md:px-8">
+        <div className="px-4 pt-10 md:w-96 ml-1 md:px-8">
           {loading ? (
             <p className="font-bold animate-pulse duration-500 font-serif">
               Loading...

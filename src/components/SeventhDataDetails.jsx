@@ -13,7 +13,7 @@ export default function SeventhDataDetails() {
   }
 
   return (
-    <div className="px-4 pt-10 w-80 ml-1 pb-5 md:px-8 md:pb-0">
+    <div className="px-4 pt-10 md:w-96 ml-1 pb-5 md:px-8 md:pb-0">
       {seventhData && seventhData[0] && (
         <>
           <div>

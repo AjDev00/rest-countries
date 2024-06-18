@@ -35,7 +35,7 @@ export default function CountryView() {
   }
 
   return (
-    <div className="px-4 pt-10 w-80 ml-1 pb-5 md:px-96 md:ml-36">
+    <div className="px-4 pt-10 md:w-96 ml-1 pb-5 md:px-96 md:ml-36">
       {selectedRegion && !searchClicked && !clickDetails ? (
         <Region />
       ) : (

@@ -31,7 +31,7 @@ export default function CountryDetails() {
   }
 
   return (
-    <div className="px-4 pt-10 w-80 ml-1 pb-5 md:px-20 md:pb-0 md:ml-12">
+    <div className="px-4 pt-10 md:w-96 ml-1 pb-5 md:px-20 md:pb-0 md:ml-12">
       {!searchLoading && !searchClicked && (
         <>
           <div>

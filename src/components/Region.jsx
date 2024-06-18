@@ -18,7 +18,7 @@ export default function Region() {
                 {countries.map((country, index) => (
                   <div
                     key={country.cca3}
-                    className="px-4 pt-10 w-80 ml-1 md:px-8 md:pb-5"
+                    className="px-4 pt-10 md:w-96 ml-1 md:px-8 md:pb-5"
                   >
                     <Link to={`/country/${country.name.common}`}>
                       <div
