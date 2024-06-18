@@ -1,15 +1,32 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
+import { useHistory } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi";
 
 export default function CountryDetails() {
   const { searchData } = useContext(AppContext);
   const { clickDetails } = useContext(AppContext);
+  const history = useHistory();
+
+  function goBack() {
+    history.go(-1);
+    console.log("clickdd");
+  }
 
   return (
     <div>
-      <div className="px-4 pt-10 w-96 ml-1 pb-5 md:px-8 md:pb-5 md:ml-32 md:mt-7">
+      <div className="px-4 pt-10 w-80 ml-1 pb-5 md:px-8 md:pb-5 md:ml-32 md:mt-7">
         {searchData && searchData[0] && (
           <>
+            <div
+              onClick={goBack}
+              className="md:ml-[-50px] md:mb-10 cursor-pointer flex flex-row gap-3 border w-24 justify-between items-center px-4 p-1 mb-5 border-white bg-white duration-500 shadow-md shadow-slate-400 dark:border-slate-800 dark:shadow-slate-900 dark:bg-slate-800 dark:text-white dark:duration-500"
+            >
+              <button>
+                <BiArrowBack size={10} />
+              </button>
+              <p>Back</p>
+            </div>
             {clickDetails && (
               <div className="md:border-transparent md:bg-transparent border border-white bg-white duration-500 shadow-md shadow-slate-200 dark:border-slate-800 dark:shadow-slate-900 rounded-md dark:bg-slate-800 dark:text-white dark:duration-500 md:h-10">
                 <div className="md:flex flex-row">

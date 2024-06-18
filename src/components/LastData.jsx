@@ -11,7 +11,7 @@ export default function LastData() {
   return (
     <div>
       <div>
-        <div className="px-4 pt-10 w-96 ml-1 pb-10 md:ml-[-80px] md:px-16">
+        <div className="px-4 pt-10 w-80 ml-1 pb-10 md:ml-[-80px] md:px-16">
           {loading ? (
             <p className="font-bold animate-pulse duration-500 font-serif">
               Loading...

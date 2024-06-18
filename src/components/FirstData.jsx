@@ -11,7 +11,7 @@ export default function FirstData() {
   return (
     <div>
       <div>
-        <div className="px-4 pt-10 w-96 ml-1 md:px-8 md:pb-5">
+        <div className="px-4 pt-10 w-80 md:px-8 md:pb-5">
           {loading ? (
             <p className="font-bold animate-pulse duration-500 font-serif">
               Loading...

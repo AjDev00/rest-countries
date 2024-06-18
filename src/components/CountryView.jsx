@@ -35,7 +35,7 @@ export default function CountryView() {
   }
 
   return (
-    <div className="px-4 pt-10 w-96 ml-1 pb-5 md:px-96 md:ml-36">
+    <div className="px-4 pt-10 w-80 ml-1 pb-5 md:px-96 md:ml-36">
       {selectedRegion && !searchClicked && !clickDetails ? (
         <Region />
       ) : (
@@ -44,11 +44,6 @@ export default function CountryView() {
           className="border border-white bg-white shadow-md duration-500 shadow-slate-200 rounded-md dark:border-slate-800 dark:shadow-slate-900 dark:bg-slate-800 dark:text-white dark:duration-500 md:w-80"
         >
           {searchClicked && <ViewCountrySearch />}
-          {/* {searchClicked ? (
-            <ViewCountrySearch />
-          ) : (
-            <div>{clickDetails && !selectedRegion && <CountryDetails />}</div>
-          )} */}
         </div>
       )}
     </div>
